@@ -1,0 +1,257 @@
+body{
+    background-color: hsl(216, 12%, 8%);
+    width:1440px;
+}
+
+.cartRating{
+    background-color: hsl(213, 19%, 18%);
+    width:304px;
+    height:304px;
+    margin: 140px auto 50px auto;
+    border-radius: 9%;
+    position:relative;
+    
+
+    
+    
+}
+.iconStar{
+    position:absolute;
+    inset:20px 0 0 20px;
+    background-color:hsl(216deg 12% 54% / 16%);
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.content{
+    font-family: 'Overpass', sans-serif;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    position:absolute;
+    inset:-60px 21px 0 21px;
+    
+    
+}
+
+.title{
+    font-size:20px;
+    font-weight: 700;
+    color:hsl(0, 0%, 100%);
+    margin:2px 0 0 0;
+}
+
+.desc{
+    font-size:13px;
+    font-weight: 400;
+    color:hsl(217, 12%, 63%);
+    margin:9px 0 0 0;
+}
+
+.Rating{
+    position:absolute;
+    inset:167px 21px 65px 21px;
+    padding:0 2px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items:center;
+    
+    
+    
+}
+.rate{
+    background-color: hsl(217deg 12% 63% / 18%);
+    color:hsl(216, 12%, 54%);
+    font-family: 'Overpass', sans-serif;
+    font-size:14px;
+    font-weight:700;
+    width:38px;
+    height:38px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.rate:hover{
+    background-color:hsl(25, 97%, 53%) ;
+    color:hsl(0, 0%, 100%);
+    cursor:pointer;
+}
+
+.btn{
+    position:absolute;
+    inset:81% 21px 65px 21px;
+    height:35px;
+}
+
+.btn button{
+    width:100%;
+    height:100%;
+    font-family:'Overpass', sans-serif;
+    font-size:14px;
+    padding-top:1px;
+    text-align: center;
+    letter-spacing: 1px;
+    background-color: hsl(25, 97%, 53%);
+    color:hsl(0, 0%, 100%);
+    font-weight:700;
+    border:none;
+    border-radius: 20px;
+}
+button:hover{
+    background-color:hsl(0, 0%, 100%);
+    color:hsl(25, 97%, 53%);
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    color:hsl(217, 12%, 63%); 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none; 
+}
+
+
+.iconThank {
+    position: absolute;
+    top: 28%;
+    left: 48%;
+    transform: translate(-50% ,-50%);
+}
+
+
+.contentRate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    inset: 50px 21px 20px 21px;
+}
+
+.selectedRate{
+    font-family: 'Overpass', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 9px;
+    padding: 5px 17px;
+    border: none;
+    border-radius: 20px;
+    background-color: hsl(216deg 12% 54% / 16%);
+    color: hsl(25, 97%, 53%);
+}
+
+.Note{
+    height: auto;
+    position: absolute;
+    inset: 50% 16px 21px 16px;
+}
+
+.NoteTitle{
+    font-family: 'Overpass', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: hsl(0 , 0% ,100%);
+    text-align: center;
+    margin: 30px 0 5px 0;
+}
+
+.NoteP{
+    font-family: 'Overpass', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-align:center;
+    color: hsl(217, 12%, 63%);
+    padding: 0 1px;
+    margin: 0;
+}
+
+
+@media only screen and (max-width:375px) {
+    
+    body{
+        width:375px;
+    }
+
+    .cartRating{
+        width: 353px;
+        height: 390px;
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+    .iconStar{
+        width: 45px;
+        height: 45px;
+    }
+    
+    .title {
+        font-size: 30px;
+        margin-top: -25px;
+    }
+
+    .desc{
+        font-size: 18px;
+        text-align: start;
+    }
+
+    .Rating{
+        position: absolute;
+        top: 55%;
+    }
+    
+    .rate{
+        width: 45px;
+        height: 45px;
+    }
+
+
+    .btn{
+        height:45px;
+    }
+
+    .btn button {
+        font-size: 18px;
+        text-align: center;
+        padding-top: 4px;
+        border-radius: 25px;
+    }
+
+    .iconThank{
+        top:22%;
+    }
+    
+    .contentRate{
+        top:1%;
+    }
+
+    .selectedRate{
+        font-size: 17px;
+        text-align: center;
+        padding-top: 8px;
+        border-radius: 25px;
+    }
+
+    .Note{
+        top:48%;
+    }
+
+    .NoteTitle{
+        font-size:25px;
+    }
+
+    .NoteP{
+        font-size: 16px;
+        margin-top: 11px;
+    }
+}
